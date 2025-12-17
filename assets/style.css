@@ -1,0 +1,383 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+html, body {
+  height: 100%;
+  overflow-x: hidden;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+header {
+  background-color: #0b1531;
+}
+.user {
+  width: 50px;
+  height: 50px;
+  border: 2px solid #fe5e0d;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgb(254, 94, 13) !important;
+}
+.nav-link {
+  color: rgb(255, 255, 255) !important;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+.nav-link:hover {
+  color: #fe5e0d !important;
+}
+.nav-link i {
+  margin-right: 5px;
+}
+.b-example-divider {
+        width: 100%;
+        height: 1rem;
+        background-color: #00000007;
+        border: solid rgba(0, 0, 0, 0.15);
+        border-width: 1px 0;
+        box-shadow:
+          inset 0 0.5em 1.5em #00000026,
+          inset 0 0.125em 0.5em #00000026;
+      }
+
+
+.hero {
+  background-image: url('/assets/img/hero.JPG');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.hero p {
+  font-size: 1.1rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.carousel {
+  margin-bottom: 4rem;
+  margin-top: 20vh;
+}
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+.carousel-item {
+  position: relative;
+  height: 32rem;
+}
+.carousel-item::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.233); /* ajuste aqui a opacidade */
+  z-index: 1;
+}
+.carousel-item img {
+  position: relative;
+  z-index: 0;
+  height: auto; /* evita imagens gigantes que cobrem a tela */
+  max-height: 70vh; /* limita a altura das imagens do carrossel */
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  margin: 0 auto;
+}
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+
+.featurette-divider {
+  margin: 5rem 0;}
+
+.featurette-heading {
+  letter-spacing: -.05rem;
+}
+
+@media (min-width: 40em) {
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}
+
+.sobre_min{
+  border-top: 1px solid #120e0e51;
+  border-bottom: 1px solid #120e0e51;
+  margin: 1.3px;
+}
+.sobre_min p{
+  text-indent: 10px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 50px;
+  font-size: 1.1em;
+  color: #000000;
+  text-align: justify;
+}
+@media (max-width: 768px) {
+  .sobre_min p {
+    margin: 5vw;
+  }
+  .title {
+  text-align: center;
+  margin: 40px 0 20px 0;
+  }
+}
+.title {
+  text-align: left;
+  margin: 60px 0 20px 5vh;
+}
+.portfolio {
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+}
+.cards {
+  display: inline-block;
+  vertical-align: top;
+  width: 80px;
+  height: auto;
+  margin: 10px;
+  background-color: #f0f0f0;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+  overflow: hidden;
+}
+.cards img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.cards i {
+  font-size: 50px;
+  margin-top: 10px;
+}
+.cards h4{
+  margin: 12px 0 8px 0;
+  font-size: 0.8em;
+  color: #333;
+}
+.cards p {
+  display: none;
+  margin: 0 12px 12px 12px;
+  font-size: 0.9em;
+  color: #000000;
+}
+.cards:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+svg {
+  color: #fe5e0d;
+}
+
+main {
+  flex: 1;
+}
+footer{  
+  background-color: #0b1531;
+  color: #fe5e0d;
+  width: 100%;
+}
+#FD {
+  padding-left: 50px;
+  border-right: 1px solid #8180808a;
+}
+footer a{
+  color: #fe5e0d;
+  text-decoration: none;
+}
+footer i:hover{
+  color: #fe5e0d;
+  transition: color 0.5s;
+}
+
+@media (min-width: 768px) {
+  footer.d-flex {
+    justify-content: space-between !important;
+    align-items: center !important;
+  }
+  footer > div {
+    flex: 1;
+  }
+  footer > div:first-child {
+    justify-content: flex-start;
+  }
+  footer > div:last-child {
+    justify-content: flex-end;
+  }
+}
+
+/* Projects styles */
+.projects-grid {
+  gap: 1rem;
+}
+.project-card {
+  border: none;
+  overflow: hidden;
+}
+.project-thumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  min-height: 120px;
+}
+.project-card .card-body {
+  padding: 0.8rem;
+}
+.project-card .btn {
+  font-size: 0.85rem;
+}
+
+/* Modal carousel image */
+.modal .carousel-item img {
+  height: auto; /* evita herdar height:100vh do carrossel principal */
+  max-height: 70vh;
+  object-fit: contain;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .project-thumb {
+    min-height: 80px;
+  }
+  .project-card .card-body p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-thumb {
+    min-height: 60px;
+  }
+  .project-card .card-body {
+    padding: 0.6rem;
+  }
+}
+
+.project-card .row.g-0 {
+  display: flex;
+  flex-direction: column;
+}
+.project-card .col-4, .project-card .col-8 {
+  width: 100% !important;
+}
+.project-card .project-thumb {
+  min-height: 160px;
+  max-height: 220px;
+}
+.project-card .card-body {
+  padding-top: 0.75rem;
+}
+
+@media (min-width: 992px) {
+  /* se quiser voltar ao layout em linha em telas grandes, ajuste aqui */
+  /* exemplo: .project-card .row.g-0 { flex-direction: row; } */
+}
+
+/* Override das cores dos botões para usar o laranja do site */
+:root {
+  --site-orange: #fe5e0d;
+  --site-orange-dark: #e55308;
+  --site-orange-contrast: #ffffff;
+}
+
+/* Botão primário */
+.btn-primary {
+  background-color: var(--site-orange) !important;
+  border-color: var(--site-orange) !important;
+  color: var(--site-orange-contrast) !important;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.show > .btn-primary.dropdown-toggle {
+  background-color: var(--site-orange-dark) !important;
+  border-color: var(--site-orange-dark) !important;
+  color: var(--site-orange-contrast) !important;
+  box-shadow: 0 0 0 .2rem rgba(254,94,13,0.25);
+}
+
+/* Botão outline primário */
+.btn-outline-primary {
+  color: var(--site-orange) !important;
+  border-color: var(--site-orange) !important;
+}
+.btn-outline-primary:hover,
+.btn-outline-primary:focus {
+  color: var(--site-orange-contrast) !important;
+  background-color: var(--site-orange) !important;
+  border-color: var(--site-orange) !important;
+}
+
+/* Links e elementos relacionados */
+.btn-link {
+  color: var(--site-orange) !important;
+}
+.navbar .btn-primary {
+  color: var(--site-orange-contrast) !important;
+}
+.form-control:focus {
+  box-shadow: 0 0 0 .2rem rgba(254,94,13,0.15) !important;
+  border-color: var(--site-orange) !important;
+}

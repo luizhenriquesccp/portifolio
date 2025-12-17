@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/style.css" />
+    <title>Projetos</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header id="inicio">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <div class="d-flex align-items-center">
+            <img
+              src="assets/img/perfil.jpeg"
+              alt="Luiz Henrique Lima da Silva"
+              class="user me-3"
+              style="width: 50px; height: 50px"
+            />
+            <a class="navbar-brand" href="index.html">Luiz Henrique Lima da Silva</a>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html"
+                  ><i class="fa-solid fa-home"></i> Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html"
+                  ><i class="fa-solid fa-user"></i> Sobre</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="projetos.html"
+                  ><i class="fa-solid fa-book"></i> Projetos</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://github.com/luizhenriquesccp"
+                  ><i class="fa-solid fa-address-book"></i> GitHub</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container py-4">
+        <div class="section-title text-left mb-4 border-bottom pb-2">
+          <h2 class="fw-bold">MEUS PROJETOS</h2>
+        </div>
+        
+        <section id="projects" class="mt-5">
+          <div class="container">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+              <h2 class="fw-bold"> </h2>
+              <p class="text-muted mb-0">
+                Em desenvolvimento
+              </p>
+            </div>
+
+            <div class="row projects-grid">
+              <div class="col-md-6 mb-4">
+                <div class="card project-card h-100 shadow-sm">
+                  <div class="row g-0">
+                    <div class="col-4">
+                      <img
+                        src="assets/img/project-imgs/lab.png"
+                        class="img-fluid project-thumb"
+                        alt="Projeto 1"
+                      />
+                    </div>
+                    <div class="col-8">
+                      <div class="card-body">
+                        <h5 class="card-title">
+                          Lab Agenda (Projeto escolar)
+                        </h5>
+                        <p class="card-text">
+                          Um web app, criado para evitar conflitos recorrentes de agendamento nos laboratórios
+                          do campus (IFRN-CM).<br> Prazo de conclusão: final de 2026.
+                        </p>
+                        <p class="card-text">
+                          <small class="text-muted"
+                            ># FLASK, JQUERY, HTML, CSS, JS e MYSQL</small
+                          >
+                        </p>
+                        <a
+                          href="https://luizhenriquesccp.github.io/SetembroAmarelo/"
+                          target="_blank"
+                          class="btn btn-sm btn-primary me-2"
+                          >Ver site</a
+                        >
+                        <button
+                          class="btn btn-sm btn-outline-secondary"
+                          data-bs-toggle="modal"
+                          data-bs-target="#modalProject1"
+                        >
+                          Galeria
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 mb-4">
+                <div class="card project-card h-100 shadow-sm">
+                  <div class="row g-0">
+                    <div class="col-4">
+                      <img
+                        src="assets/img/project-imgs/code.png"
+                        class="img-fluid project-thumb"
+                        alt="Projeto 1"
+                      />
+                    </div>
+                    <div class="col-8">
+                      <div class="card-body">
+                        <h5 class="card-title">
+                          Jogo da Velha
+                        </h5>
+                        <p class="card-text">
+                          Um jogo simples criado para uma avaliação escolar, onde
+                          pode se jogar contra outro jogador, porem só 
+                          localmente, por enquanto.
+                        </p>
+                        <p class="card-text">
+                          <small class="text-muted"
+                            ># PYTHON</small
+                          >
+                        </p>                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        
+        <section id="projects" class="mt-5">
+          <div class="container">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+              <h2 class="fw-bold"> </h2>
+              <p class="text-muted mb-0">
+                Projetos FullStacks simples
+              </p>
+            </div>
+
+            <div class="row projects-grid">
+              <div class="col-md-6 mb-4">
+                <div class="card project-card h-100 shadow-sm">
+                  <div class="row g-0">
+                    <div class="col-4">
+                      <img
+                        src="assets/img/project-imgs/respiraai.png"
+                        class="img-fluid project-thumb"
+                        alt="Projeto 1"
+                      />
+                    </div>
+                    <div class="col-8">
+                      <div class="card-body">
+                        <h5 class="card-title">
+                          Respira Aí - Setembro Amarelo (Projeto escolar)
+                        </h5>
+                        <p class="card-text">
+                          Essa é uma versão sem a parte do Flask de um
+                          projeto que fiz na escola para uma apresentação avaliativa.
+                        </p>
+                        <p class="card-text">
+                          <small class="text-muted"># HTML, CSS, JS</small>
+                        </p>
+                        <a
+                          href="https://luizhenriquesccp.github.io/SetembroAmarelo/"
+                          target="_blank"
+                          class="btn btn-sm btn-primary me-2"
+                          >Ver site</a
+                        >
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 mb-4">
+                <div class="card project-card h-100 shadow-sm">
+                  <div class="row g-0">
+                    <div class="col-4">
+                      <img
+                        src="assets/img/project-imgs/cotacao.png"
+                        class="img-fluid project-thumb"
+                        alt="Projeto 2"
+                      />
+                    </div>
+                    <div class="col-8">
+                      <div class="card-body">
+                        <h5 class="card-title">Cotações de Moedas</h5>
+                        <p class="card-text">
+                          Site desenvolvido como teste para consulta de
+                          cotações de moedas em tempo real, utilizando uma API
+                        </p>
+                        <p class="card-text">
+                          <small class="text-muted"># API Exchange Rate, JS, HTML e CSS</small>
+                        </p>
+                        <a href="cotacao/index.html" class="btn btn-sm btn-primary me-2"
+                          >Ver site</a
+                        >
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 mb-4">
+                <div class="card project-card h-100 shadow-sm">
+                  <div class="row g-0">
+                    <div class="col-4">
+                      <img
+                        src="assets/img/project-imgs/filmes.png"
+                        class="img-fluid project-thumb"
+                        alt="Projeto 2"
+                      />
+                    </div>
+                    <div class="col-8">
+                      <div class="card-body">
+                        <h5 class="card-title">Catalogo de Filmes</h5>
+                        <p class="card-text">
+                          Utilizando uma API de filmes, o site exibe uma lista longa
+                          de filmes populares com detalhes como título e sinopse, podendo 
+                          pesquisar por filmes específicos.
+                        </p>
+                        <p class="card-text">
+                          <small class="text-muted"># API Obmdi, JS, HTML e CSS</small>
+                        </p>
+                        <a href="filmes/index.html" class="btn btn-sm btn-primary me-2"
+                          >Ver site</a
+                        >
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 mb-4">
+                <div class="card project-card h-100 shadow-sm">
+                  <div class="row g-0">
+                    <div class="col-4">
+                      <img
+                        src="assets/img/project-imgs/esportes.png"
+                        class="img-fluid project-thumb"
+                        alt="Projeto 2"
+                      />
+                    </div>
+                    <div class="col-8">
+                      <div class="card-body">
+                        <h5 class="card-title">Site de Noticias Esportivas</h5>
+                        <p class="card-text">
+                          Essa página foi a primeira que eu desenvolvi para estudar
+                          como usar html e css juntos, é um site simples que me inpirei
+                          em portais como o GE.
+                        </p>
+                        <p class="card-text">
+                          <small class="text-muted"># HTML, CSS</small>
+                        </p>
+                        <a href="site-esportivo/index.html" class="btn btn-sm btn-primary me-2"
+                          >Ver site</a
+                        >
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 mb-4">
+                <div class="card project-card h-100 shadow-sm">
+                  <div class="row g-0">
+                    <div class="col-4">
+                      <img
+                        src="assets/img/hero.JPG"
+                        class="img-fluid project-thumb"
+                        alt="Projeto 2"
+                      />
+                    </div>
+                    <div class="col-8">
+                      <div class="card-body">
+                        <h5 class="card-title">Site Pessoal / Portfólio</h5>
+                        <p class="card-text">
+                          Portfólio responsivo falando um pouco sobre min, 
+                          minhas habilidades e conhecimentos, desenvolvido
+                           com Bootstrap.
+                        </p>
+                        <p class="card-text">
+                          <small class="text-muted"># Bootstrap, HTML e CSS</small>
+                        </p>
+                        <a href="index.html" class="btn btn-sm btn-primary me-2"
+                          >Ver site</a
+                        >
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+       
+      </div>
+    </main>
+    <div class="modal fade" id="modalProject1" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content bg-dark text-white">
+          <div class="modal-header border-0">
+            <h5 class="modal-title">Galeria - Lab Agenda</h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body p-0">
+            <div id="carouselProj1" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="/assets/img/project-imgs/lab.png" class="d-block w-100" alt="lab-slide-1" />
+                </div>
+                <div class="carousel-item">
+                  <img src="/assets/img/project-imgs/lab2.png" class="d-block w-100" alt="lab-slide-2" />
+                </div>
+                <div class="carousel-item">
+                  <img src="/assets/img/project-imgs/lab3.png" class="d-block w-100" alt="lab-slide-3" />
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselProj1" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselProj1" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <div class="modal-thumbs d-flex justify-content-center gap-2 p-2">
+              <img src="/assets/img/project-imgs/lab.png" class="thumb" style="cursor: pointer; max-width: 80px;" data-bs-target="#carouselProj1" data-bs-slide-to="0" alt="thumb1">
+              <img src="/assets/img/project-imgs/lab2.png" class="thumb" style="cursor: pointer; max-width: 80px;" data-bs-target="#carouselProj1" data-bs-slide-to="1" alt="thumb2">
+              <img src="/assets/img/project-imgs/lab3.png" class="thumb" style="cursor: pointer; max-width: 80px;" data-bs-target="#carouselProj1" data-bs-slide-to="2" alt="thumb3">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
